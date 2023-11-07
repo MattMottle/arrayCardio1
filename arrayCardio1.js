@@ -28,9 +28,17 @@
     
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
-        const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600))
-        console.table(fifteen)
+        const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600));
+        console.table(fifteen);
+        
+        const sixteen = inventors.filter(inventor => (inventor.year >= 1600 && inventor.year < 1700));
+        console.table(sixteen);
 
+        const eighteen = inventors.filter(inventor => (inventor.year >= 1800 && inventor.year < 1800));
+        console.table(eighteen);
+
+        const nineteen = inventors.filter(inventor => (inventor.year >= 1900 && inventor.year < 1900));
+        console.table(nineteen);
     // Array.prototype.map()
     // 2. Give us an array of the inventors first and last names
         const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
@@ -77,7 +85,7 @@
             return aLast> bLast ? 1 : -1;
         });
         console.log(alpha)
-        
+
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
